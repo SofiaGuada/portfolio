@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Sofia Sena - Desarrolladora Backend .NET / C# y estudiante de Tecnicatura en Programación (UTN FRGP). Proyectos, conocimientos y contacto.">
+  <meta name="author" content="Sofia Sena">
+  <title>Sofia Sena | Desarrolladora Backend</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. MENÚ DE NAVEGACIÓN (Fijo arriba)
+       ========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Logotipo / Nombre a la izquierda -->
+      <a href="#inicio" class="logo" aria-label="Volver al inicio">
+        <span class="logo-sparkle" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo-text">Sofia Sena</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir o cerrar menú de navegación">
+      <label for="menu-toggle" class="menu-btn" aria-label="Menú de navegación">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Enlaces de navegación -->
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li class="nav-item"><a href="#conocimientos" class="nav-link">Conocimientos</a></li>
+          <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="#redes" class="nav-link">Redes</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link nav-btn-destacado">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         2. PRESENTACIÓN INICIAL CON FOTO (Hero)
+         ========================================== -->
+    <section id="inicio" class="hero-section">
+      <div class="decoracion-fondo-chispa chispa-1" aria-hidden="true"></div>
+      <div class="decoracion-fondo-chispa chispa-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-foto-wrapper">
+          <div class="marco-magico">
+            <div class="marco-borde-resplandor"></div>
+            <img src="img/foto-perfil.jpg" alt="Foto de perfil de Sofia Sena" class="foto-perfil">
+            <span class="destello-magico destello-sup-der" aria-hidden="true">✦</span>
+            <span class="destello-magico destello-inf-izq" aria-hidden="true">✧</span>
+          </div>
+        </div>
+
+        <!-- Contenido textual del Hero -->
+        <div class="hero-contenido">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>En constante aprendizaje & desarrollo</span>
+          </div>
+          <h1 class="hero-nombre">Sofia Sena</h1>
+          
+          <h2 class="hero-titulo">Estudiante de Programación | Orientación Backend (.NET / C++) </h2>
+          <p class="hero-frase">
+            Estudiante de la UTN orientada al desarrollo backend y a la creación de software con C++, .NET.
+          </p>
+
+          <!-- Dos botones de acción -->
+          <div class="hero-botones">
+            <a href="#proyectos" class="btn btn-primario">
+              <span>Ver proyectos</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contacto" class="btn btn-secundario">
+              <span>Contactar</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. INFORMACIÓN GENERAL (Sobre mí)
+         ========================================== -->
+    <section id="sobre-mi" class="section sobre-mi-section">
+      <div class="container">
+        <div class="section-encabezado">
+          <span class="subtitulo-seccion">✦ Conóceme</span>
+          <h2 class="titulo-seccion">Sobre mí</h2>
+        </div>
+
+        <div class="sobre-mi-grid">
+          <!-- Texto biográfico principal -->
+          <div class="sobre-mi-bio card">
+            <div class="card-adorno-flor" aria-hidden="true">🌸</div>
+            <h3 class="bio-titulo">¡Hola! Qué lindo que estés acá</h3>
+            <p class="bio-parrafo">
+              Soy estudiante de la Tecnicatura en Programación en la Universidad Tecnologica Nacional (FRGP), vivo en Buenos Aires, Argentina.
+            </p>
+            <p class="bio-parrafo">
+              Por medio de mis estudio adquiri conocimientos en c++, sql y estoy aprendiendo c#, tambien .net.
+            </p>
+          </div>
+
+          <div class="datos-rapidos-container">
+            <div class="dato-tarjeta card">
+              <div class="dato-icono" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="dato-info">
+                <span class="dato-etiqueta">Ubicación</span>
+                <span class="dato-valor">Benavidez, Tigre</span>
+                <span class="dato-subvalor">Buenos Aires, Argentina</span>
+              </div>
+            </div>
+
+            <div class="dato-tarjeta card">
+              <div class="dato-icono" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="dato-info">
+                <span class="dato-etiqueta">Educación</span>
+                <span class="dato-valor">Terciario (en curso): Tecnicatura en Programación</span>
+                <span class="dato-subvalor">Universidad Tecnológica Nacional (FRGP)</span>
+              </div>
+            </div>
+
+            <div class="dato-tarjeta card">
+              <div class="dato-icono" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="dato-info">
+                <span class="dato-etiqueta">Emprendimiento Propio & Proyectos UTN</span>
+                <span class="dato-valor">Gestión comercial y desarrollo de software académico</span>
+                <span class="dato-subvalor">Iniciativa propia, gestión y aprendizaje autónomo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-container card">
+          <h3 class="timeline-titulo">
+            <span class="icono-reloj" aria-hidden="true">🌱</span>
+            Recorrido y experiencia
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-punto" aria-hidden="true"></div>
+              <div class="timeline-contenido">
+                <div class="timeline-fecha">2024 – hoy</div>
+                <h4 class="timeline-nombre-evento">Emprendimiento Independiente – Indumentaria</h4>
+                <p class="timeline-descripcion">               
+                  <strong>• Gestión de Stock e Inventario:</strong> Control de mercadería, organización en exhibición y reposición de productos.<br>
+                  <strong>• Atención Presencial al Cliente:</strong> Asesoramiento directo, cobros y resolución de consultas.<br>
+                 <strong>• Organización Comercial:</strong> Administración de caja, manejo de proveedores y planificación de venta.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. CONOCIMIENTOS (Skills)
+         ========================================== -->
+      <section id="conocimientos" class="section conocimientos-section">
+       <div class="container">
+
+     <div class="section-encabezado">
+      <span class="subtitulo-seccion">✦ Herramientas & Tecnologías</span>
+      <h2 class="titulo-seccion">Mis conocimientos</h2>
+      <p class="seccion-bajada">
+        Tecnologías y lenguajes que aplico y profundizo continuamente en mi formación técnica.
+      </p>
+    </div>
+
+    <div class="tecnologias">
+      <img src="https://reviewsreporter.com/wp-content/uploads/2022/08/CPlusPlus1-1.jpg" alt="C++">
+      <img src="https://www.mscorrigan.com/images/csharp.PNG" alt="C#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Microsoft_SQL_Server_2025_icon.svg/960px-Microsoft_SQL_Server_2025_icon.svg.png" alt="SQL">
+      <img src="https://images.seeklogo.com/logo-png/26/1/microsoft-net-framework-logo-png_seeklogo-266948.png" alt=".NET">
+    </div>
+
+  </div>
+</section>
+
+    <!-- ==========================================
+         5. PROYECTOS
+         ========================================== -->
+    <section id="proyectos" class="section proyectos-section">
+      <div class="container">
+        <div class="section-encabezado">
+          <span class="subtitulo-seccion">✦ Mi trabajo</span>
+          <h2 class="titulo-seccion">Proyectos</h2>
+          <p class="seccion-bajada">
+            Una muestra de mis desarrollos académicos y personales.
+        </div>
+
+        <div class="proyectos-grid">
+          <article class="proyecto-card proyecto-destacado card">
+            <div class="proyecto-img-contenedor">
+              <img src="img/plataformas-streming.jpg" alt="Plataforma de Streaming en SQL" class="proyecto-img">
+              <div class="proyecto-badge-destacado">⭐ Destacado</div>
+            </div>
+            <div class="proyecto-cuerpo">
+              <div class="proyecto-meta">
+                <span class="meta-tag meta-genero">🎬 Streaming / Multimedia</span>
+                <span class="meta-tag meta-motor">💾 SQL</span>
+                <span class="meta-tag meta-contexto">🏛️ UTN FRGP</span>
+              </div>
+              <h3 class="proyecto-titulo"> Gestión de contenido Audiovisual</h3>
+              <p class="proyecto-descripcion">
+                Este proyecto fue realizado para la materia de Base de Datos II, Fue realizado en equipo se utilizo SQL server.
+                Donde la base de datos almacena la información del usuario, contenido, actores, género, productora y tipos de Contenido.
+          </p> 
+              </p>
+              <div class="proyecto-rol-box">
+                <span class="rol-etiqueta">Mi rol:</span>
+                <span class="rol-valor">Diseño, arquitectura de base de datos relacional y consultas SQL</span>
+              </div>
+              <div class="proyecto-acciones">
+                <a href="https://github.com/SofiaGuada/BD_027_TP" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Ver en GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card proyecto-destacado card">
+            <div class="proyecto-img-contenedor">
+              <img src="img/catalogo.png" alt="Catálogo" class="proyecto-img">
+              <div class="proyecto-badge-destacado">⭐ Destacado</div>
+            </div>
+            <div class="proyecto-cuerpo">
+              <div class="proyecto-meta">
+                <span class="meta-tag meta-motor">⚡ C# / .NET </span>
+                <span class="meta-tag meta-contexto">📁 Proyecto </span>
+                <span class="meta-tag meta-contexto">🏛️ UTN FRGP</span>
+              </div>
+              <h3 class="proyecto-titulo">Catálogo</h3>
+              <p class="proyecto-descripcion">
+                Este proyecto fue realizado para la materia de Programación III. El mismo fue realizado en equipo, las herramientas
+                utilizadas fueron Github, .Net, C#, SQL server. 
+                Esta aplicación agrega, modifica y elimina artículos, asi como las categorias y marcas que pudieran haber. 
+                Además, permite cargar imagen, precio y filtrar búsqueda.
+              </p>
+              <div class="proyecto-acciones">
+                <a href="https://github.com/danamerro/tp-winform-equipo-8" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Ver en GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card proyecto-destacado card">
+            <div class="proyecto-img-contenedor">
+              <img src="img/sistema-gestion.jpg" alt="Imagen placeholder para tercer proyecto destacado" class="proyecto-img">
+              <div class="proyecto-badge-destacado">⭐ Destacado</div>
+            </div>
+            <div class="proyecto-cuerpo">
+              <div class="proyecto-meta">
+                <span class="meta-tag meta-motor">⚡ C++ </span>
+                <span class="meta-tag meta-contexto">🏛️ Académico</span>
+              </div>
+              <h3 class="proyecto-titulo"> Sistema de Gestión </h3>
+              <p class="proyecto-descripcion">
+                Permite gestionar y organizar eventos. Cuenta con una interfaz gráfica que facilita la 
+                administración de clientes, eventos, servicios, pagos.
+              </p>
+              <div class="proyecto-rol-box">
+                <span class="rol-etiqueta">Mi rol:</span>
+                <span class="rol-valor">Desarrollo de lógica y estructura </span>
+              </div>
+              <div class="proyecto-acciones">
+                <a href="https://github.com/SofiaGuada/SistemaDeGestion2.0" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Ver en GitHub </span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+    <!-- ==========================================
+         6. REDES
+         ========================================== -->
+    <section id="redes" class="section redes-section">
+      <div class="container">
+        <div class="section-encabezado">
+          <span class="subtitulo-seccion">✦ Conectemos</span>
+          <h2 class="titulo-seccion">Redes & Contacto directo</h2>
+          <p class="seccion-bajada">
+            Podés encontrarme en mis perfiles profesionales o escribirme directamente.
+          </p>
+        </div>
+
+        <div class="redes-grid">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/sofia-guadalupe-sena-88a0a93a8/" target="_blank" rel="noopener noreferrer" class="red-tarjeta card" aria-label="Visitar perfil de LinkedIn de Sofia Sena (se abre en pestaña nueva)">
+            <div class="red-icono-box red-linkedin" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <span class="red-nombre">LinkedIn</span>
+            <span class="red-detalle">Sofia Guadalupe Sena</span>
+            <span class="red-enlace-texto">Ver perfil ↗</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/SofiaGuada" target="_blank" rel="noopener noreferrer" class="red-tarjeta card" aria-label="Visitar perfil de GitHub de Sofia Sena (se abre en pestaña nueva)">
+            <div class="red-icono-box red-github" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </div>
+            <span class="red-nombre">GitHub</span>
+            <span class="red-detalle">@SofiaGuada</span>
+            <span class="red-enlace-texto">Ver repositorios ↗</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:sofiaguada66@gmail.com" class="red-tarjeta card" aria-label="Enviar correo electrónico a sofiaguada66@gmail.com">
+            <div class="red-icono-box red-email" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <span class="red-nombre">Email</span>
+            <span class="red-detalle">sofiaguada66@gmail.com</span>
+            <span class="red-enlace-texto">Enviar correo ↗</span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/1153442343" target="_blank" rel="noopener noreferrer" class="red-tarjeta card red-tarjeta-destacada" aria-label="Escribir por WhatsApp (se abre en pestaña nueva)">
+            <div class="red-icono-box red-whatsapp" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </div>
+            <span class="red-nombre">WhatsApp</span>
+            <span class="red-detalle">Mensaje directo</span>
+            <span class="red-enlace-texto">Iniciar conversación ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. FORMULARIO DE CONTACTO
+         ========================================== -->
+    <section id="contacto" class="section contacto-section">
+      <div class="container">
+        <div class="section-encabezado">
+          <span class="subtitulo-seccion">✦ Conversemos</span>
+          <h2 class="titulo-seccion">Contacto</h2>
+          <p class="seccion-bajada">
+            ¿Tenés alguna propuesta, duda o querés compartir un proyecto? Dejame tu mensaje y te responderé a la brevedad.
+          </p>
+        </div>
+
+        <div class="contacto-wrapper card">
+          <div class="contacto-info-lateral">
+            <h3 class="contacto-subtitulo">Creemos algo juntos ✨</h3>
+            <p class="contacto-texto">
+              Estoy abierta a oportunidades de desarrollo backend, pasantías, proyectos colaborativos o simplemente intercambiar ideas sobre programación y bases de datos.
+            </p>
+            <div class="contacto-datos-item">
+              <span class="contacto-dato-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Benavidez, Tigre (Buenos Aires, Argentina)</p>
+              </div>
+            </div>
+            <div class="contacto-datos-item">
+              <span class="contacto-dato-icon" aria-hidden="true">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>sofiaguada66@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <form action="https://formspree.io/f/xwlpqrzv" method="POST" class="formulario-contacto">
+            
+            <!-- Campo Nombre -->
+            <div class="form-grupo">
+              <label for="nombre" class="form-label">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre y apellido" required autocomplete="name">
+            </div>
+
+            <!-- Campo Email -->
+            <div class="form-grupo">
+              <label for="email" class="form-label">Correo electrónico *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu.correo@ejemplo.com" required autocomplete="email">
+            </div>
+
+            <!-- Campo Asunto -->
+            <div class="form-grupo">
+              <label for="asunto" class="form-label">Asunto *</label>
+              <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Motivo de tu mensaje" required>
+            </div>
+
+            <div class="form-grupo">
+              <label for="mensaje" class="form-label">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" placeholder="Escribí acá tu mensaje..." required></textarea>
+            </div>
+
+            <!-- Botón Enviar -->
+            <div class="form-grupo form-submit-box">
+              <button type="submit" class="btn btn-primario btn-enviar">
+                <span>Enviar mensaje</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-marca">
+        <span class="footer-logo">Sofia Sena</span>
+        <span class="footer-separador">✦</span>
+        <span class="footer-rol">Desarrolladora Backend .NET & C#</span>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 Sofia Sena
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
